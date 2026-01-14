@@ -1,4 +1,3 @@
-````md
 # Frontend Day 2 Assignment 1
 
 ## Find and Fix the Bugs (JavaScript)
