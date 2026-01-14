@@ -1,6 +1,6 @@
 # Frontend Day 2 Assignment 1
 
-## Find and Fix the Bugs (JavaScript)
+## Find and Fix the Bugs 
 
 ---
 
@@ -348,5 +348,3 @@ Arrow functions do not have their own `this`. Regular functions correctly bind `
 
 ---
 
-```
-```
