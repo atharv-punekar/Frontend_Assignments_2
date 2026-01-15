@@ -4,7 +4,7 @@
 
 ---
 
-## 1. Variable Scope Issue
+## 1.
 
 ### CODE :-
 ```js
@@ -43,7 +43,7 @@ printName();
 
 ---
 
-## 2. Strict Comparison Type Issue
+## 2. 
 
 ### CODE :-
 
@@ -80,7 +80,7 @@ Strict equality (`===`) compares both value and type. `"18"` (string) is not equ
 
 ---
 
-## 3. Array Index Out of Range
+## 3. 
 
 ### CODE :-
 
@@ -109,7 +109,7 @@ Array indices range from `0` to `length - 1`. Using `<=` accesses an undefined i
 
 ---
 
-## 4. Asynchronous Execution Issue
+## 4. 
 
 ### CODE :-
 
@@ -141,7 +141,7 @@ setTimeout(() => {
 
 ---
 
-## 5. Missing Return Statement
+## 5. 
 
 ### CODE :-
 
@@ -172,7 +172,7 @@ Without a `return` statement, the function returns `undefined`.
 
 ---
 
-## 6. Object Reference Behavior
+## 6. 
 
 ### CODE :-
 
@@ -203,7 +203,7 @@ Objects are passed by reference, so changes made inside the function affect the 
 
 ---
 
-## 7. Event Listener Function Execution Issue
+## 7. 
 
 ### CODE :-
 
@@ -242,7 +242,7 @@ Passing `handleClick()` executes the function immediately. Instead, the function
 
 ---
 
-## 8. Promise Chain Break
+## 8. 
 
 ### CODE :-
 
@@ -275,7 +275,7 @@ fetch("https://api.example.com/data")
 
 ---
 
-## 9. map Variable Issue
+## 9. 
 
 ### CODE :-
 
@@ -313,7 +313,7 @@ An incorrect variable name caused an error, and the missing return statement res
 
 ---
 
-## 10. Incorrect `this` Binding
+## 10. 
 
 ### CODE :-
 
