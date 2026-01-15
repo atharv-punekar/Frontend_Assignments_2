@@ -14,7 +14,7 @@ function printName() {
 
     var name = "Akshay";
 
-  }
+  } 
 
   console.log(name);
 
