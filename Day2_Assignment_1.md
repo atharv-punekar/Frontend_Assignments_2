@@ -74,6 +74,18 @@ if (age === 18) {
   console.log("Minor");
 }
 ```
+OR
+
+
+```js
+let age = "18";
+
+if (age == 18) {
+  console.log("Adult");
+} else {
+  console.log("Minor");
+}
+```
 
 **Reason :-**
 Strict equality (`===`) compares both value and type. `"18"` (string) is not equal to `18` (number).
