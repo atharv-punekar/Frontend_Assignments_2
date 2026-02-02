@@ -18,7 +18,7 @@ printDataType(function(){});
 
 ### Explain the difference between null and undefined with code.
     Undefined :- Variable is created but value is not given.
-	  Null :- Variable is created and value set to null (empty).
+	Null :- Variable is created and value set to null (empty).
 
 
 ```javascript
@@ -37,7 +37,7 @@ console.log(typeof y);
 
 # 2️⃣ Functions
 
-### Normal Function
+### Write a normal function to add two numbers.
 
 ```javascript
 function add(a, b) {
@@ -46,7 +46,7 @@ function add(a, b) {
 console.log(add(5, 3));
 ```
 
-### Arrow Function
+### Convert a above function into an arrow function.
 
 ```javascript
 const addNum = (a, b) => {
@@ -59,7 +59,9 @@ console.log(addNum(5, 3));
 
 # 3️⃣ Strings
 
-### ✔ == vs ===
+### Write difference between == and === in java script with examples.
+    “==” (Loose Equality) Compares only values & performs type implicit conversion.
+	“===” (Strict Equality) Compares both value & data type
 
 ```javascript
 console.log(5 == "5");          // true
@@ -69,7 +71,7 @@ console.log(5 === "5");         // false
 console.log(null === undefined);// false
 ```
 
-### ✔ Convert "hello world" to Title Case
+### "hello world" convert to title case. 
 
 ```javascript
 let text = "hello world";
@@ -85,7 +87,7 @@ console.log(title); // Hello World
 
 # 4️⃣ Objects
 
-### ✔ Create user object
+### Create a user object with properties name, age, and city.
 
 ```javascript
 let user = {
@@ -96,7 +98,7 @@ let user = {
 console.log(user);
 ```
 
-### ✔ Print keys + values
+### Print all keys and values using methods Object.keys, Object.values and forEach loop
 
 ```javascript
 const keys = Object.keys(user);
@@ -110,7 +112,7 @@ Object.keys(user).forEach(key => {
 });
 ```
 
-### ✔ Add / Delete properties
+### Add new property mobileNumber and delete city properties dynamically.
 
 ```javascript
 user.mobileNumber = "8459772255";
@@ -119,7 +121,28 @@ delete user.city;
 console.log(user);
 ```
 
-### ✔ Group objects by role
+### Convert below array of object group by role
+
+```javascript
+     const users = [
+  		{ name: "Pratik", role: "admin" },
+  		{ name: "Amit", role: "user" },
+  		{ name: "Neha", role: "admin" },
+  		{ name: "Ravi", role: "user" },
+	];
+
+Output: 
+{
+  admin: [
+    { name: "Pratik", role: "admin" },
+    { name: "Neha", role: "admin" }
+  ],
+  user: [
+    { name: "Amit", role: "user" },
+    { name: "Ravi", role: "user" }
+  ]
+}
+```
 
 ```javascript
 const users = [
@@ -145,7 +168,11 @@ console.log(groupByRole(users));
 
 ---
 
-# 5️⃣ Array Methods – map, filter, reduce, reverse
+# 5️⃣ Array Methods :- 
+    1. Use map to multiply each array element by 2.
+    2. Use filter to find numbers greater than 10.
+    3. Use reduce to find the sum of array elements.
+    4. Reverse an array.
 
 ```javascript
 const arr = [20, 4, 23, 56, 1, 23, 65, 78, 45, 3, 9, 6, 23, 1, 50];
@@ -169,9 +196,19 @@ console.log(reversed);
 
 ---
 
-# 6️⃣ ES6 Features – Destructuring / Spread / Rest
+# 6️⃣ ES6 Features
 
-### ✔ Object Destructuring
+###     1. Destructure an object and console name and age from it.
+````javascript
+const user = {
+  		name: "Akshay",
+  		age: 25,
+  		city: "Pune"
+	};
+output : 
+console.log(name); // Akshay
+console.log(age); // 25
+````
 
 ```javascript
 const userObj = {
@@ -186,7 +223,15 @@ console.log(name);
 console.log(age);
 ```
 
-### ✔ Spread Operator
+###     2. Merge two arrays using spread operator.
+````javascript
+Const arr1 = [1, 2, 3];
+	const arr2 = [4, 5, 6];
+ 
+Output: 
+console.log(mergedArray);
+// [1, 2, 3, 4, 5, 6]
+````
 
 ```javascript
 const arr1 = [1, 2, 3];
@@ -196,7 +241,7 @@ const mergedArray = [...arr1, ...arr2];
 console.log(mergedArray);
 ```
 
-### ✔ Rest Parameter
+###  Create a function accepting 5 numbers using rest parameters and display sum of all numbers from function.
 
 ```javascript
 function sumNumbers(...numbers) {
@@ -211,7 +256,7 @@ sumNumbers(10, 20, 30, 40, 50);
 
 # 7️⃣ Closures
 
-### ✔ Counter using closure
+### Create a counter function using closure.
 
 ```javascript
 function createCounter() {
@@ -230,15 +275,20 @@ console.log(counter());
 console.log(counter());
 ```
 
-### ✔ Explanation
+### Explain how inner functions access outer variables.
 
-Inner functions access outer variables because of **lexical scope** and **closures**.
+	JavaScript uses Lexical Scope:
+    A function can access variables from the place where it was created, not where it is 		called.
+	So, inner functions can read and modify outer variables because:
+		They are created inside that outer function
+		They carry the surrounding scope with them
+		JS engine keeps outer variables alive if inner function is still using them
 
 ---
 
 # 8️⃣ Callbacks
 
-### ✔ Execute callback after 10 seconds
+### Create a function that accepts a callback and executes it after 10 seconds.
 
 ```javascript
 function run10S(callback) {
@@ -256,7 +306,11 @@ run10S(() => {
 
 # 9️⃣ Promises
 
-### ✔ Promise Function
+### Create a function called getUserData that:
+    - Returns a Promise
+    - Resolves with user details object contains name, age, city if userId is 1
+    - Rejects with an error message if userId is  0
+    - Handles the response using .then() and .catch()
 
 ```javascript
 function getUserData(userId) {
@@ -282,7 +336,19 @@ getUserData(1)
   .catch(error => console.log("Error:", error));
 ```
 
-### ✔ Execution Order Output
+### Guess the execution sequence of below code
+````javascript
+     console.log("1: Start");
+	setTimeout(() => {
+		console.log("2: setTimeout");
+	}, 0);
+ 
+	Promise.resolve().then(() => {
+ 		console.log("3: Promise");
+	});
+	console.log("4: End");
+````
+
 
 ```
 1: Start
@@ -294,6 +360,8 @@ getUserData(1)
 ---
 
 # 🔟 Async / Await
+
+### Convert the question 1 from assignment 9, to async/await with try , catch block.
 
 ```javascript
 async function fetchUser() {
@@ -311,7 +379,11 @@ fetchUser();
 
 # 1️⃣1️⃣ DOM Manipulation
 
-### ✔ Change text on click
+###     1. Take one div with some text and change text of an element on button click.
+````html
+	<div id="message">Hello World</div>
+	<button id="changeBtn">Change Text</button>
+````
 
 ```javascript
 const message = document.getElementById("message");
@@ -322,7 +394,11 @@ btn.addEventListener("click", () => {
 });
 ```
 
-### ✔ Add list item
+### Add a new list item dynamically.
+````html
+	<ul id="list"><li>Item 1</li></ul>
+	<button id="addItem">Add Item</button>
+````
 
 ```javascript
 const list = document.getElementById("list");
@@ -335,7 +411,11 @@ addBtn.addEventListener("click", () => {
 });
 ```
 
-### ✔ Remove element
+### Remove an element from the DOM.
+````html
+	<p id="removeMe">Remove this text</p>
+	<button id="removeBtn">Remove</button>
+````
 
 ```javascript
 const removeText = document.getElementById("removeMe");
@@ -346,7 +426,11 @@ removeBtn.addEventListener("click", () => {
 });
 ```
 
-### ✔ Show input live
+### Display input value on screen while typing.
+````html
+	<input type="text" id="inputBox" />
+	<p id="output"></p>
+````
 
 ```javascript
 const inputBox = document.getElementById("inputBox");
@@ -359,9 +443,9 @@ inputBox.addEventListener("input", () => {
 
 ---
 
-# 1️⃣2️⃣ Timers – Countdown
+# 1️⃣2️⃣ Timers
 
-### Browser countdown timer
+### Create a countdown timer using setInterval.
 
 ```html
 <p id="display"></p>
