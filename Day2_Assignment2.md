@@ -1,6 +1,6 @@
 # 1️⃣ Variables & Data Types
 
-### ✔ Function to print data type
+### Write a function that accepts different data types and prints their type using typeof.
 
 ```javascript
 function printDataType(value) {
@@ -16,7 +16,10 @@ printDataType([1, 2, 3]);
 printDataType(function(){});
 ```
 
-### ✔ null vs undefined
+### Explain the difference between null and undefined with code.
+    Undefined :- Variable is created but value is not given.
+	  Null :- Variable is created and value set to null (empty).
+
 
 ```javascript
 // undefined example
