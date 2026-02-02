@@ -276,13 +276,13 @@ console.log(counter());
 ```
 
 ### Explain how inner functions access outer variables.
-
 	JavaScript uses Lexical Scope:
-    A function can access variables from the place where it was created, not where it is 		called.
+    Function can access variables from the place where it was created, not where it called
 	So, inner functions can read and modify outer variables because:
 		They are created inside that outer function
 		They carry the surrounding scope with them
 		JS engine keeps outer variables alive if inner function is still using them
+	
 
 ---
 
@@ -381,8 +381,8 @@ fetchUser();
 
 ###     1. Take one div with some text and change text of an element on button click.
 ````html
-	<div id="message">Hello World</div>
-	<button id="changeBtn">Change Text</button>
+<div id="message">Hello World</div>
+<button id="changeBtn">Change Text</button>
 ````
 
 ```javascript
@@ -396,8 +396,8 @@ btn.addEventListener("click", () => {
 
 ### Add a new list item dynamically.
 ````html
-	<ul id="list"><li>Item 1</li></ul>
-	<button id="addItem">Add Item</button>
+<ul id="list"><li>Item 1</li></ul>
+<button id="addItem">Add Item</button>
 ````
 
 ```javascript
@@ -413,8 +413,8 @@ addBtn.addEventListener("click", () => {
 
 ### Remove an element from the DOM.
 ````html
-	<p id="removeMe">Remove this text</p>
-	<button id="removeBtn">Remove</button>
+<p id="removeMe">Remove this text</p>
+<button id="removeBtn">Remove</button>
 ````
 
 ```javascript
@@ -428,8 +428,8 @@ removeBtn.addEventListener("click", () => {
 
 ### Display input value on screen while typing.
 ````html
-	<input type="text" id="inputBox" />
-	<p id="output"></p>
+<input type="text" id="inputBox" />
+<p id="output"></p>
 ````
 
 ```javascript
