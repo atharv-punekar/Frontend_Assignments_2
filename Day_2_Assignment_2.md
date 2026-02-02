@@ -124,12 +124,12 @@ console.log(user);
 ### Convert below array of object group by role
 
 ```javascript
-     const users = [
-  		{ name: "Pratik", role: "admin" },
-  		{ name: "Amit", role: "user" },
-  		{ name: "Neha", role: "admin" },
-  		{ name: "Ravi", role: "user" },
-	];
+const users = [
+	{ name: "Pratik", role: "admin" },
+	{ name: "Amit", role: "user" },
+	{ name: "Neha", role: "admin" },
+	{ name: "Ravi", role: "user" },
+];
 
 Output: 
 {
@@ -338,15 +338,15 @@ getUserData(1)
 
 ### Guess the execution sequence of below code
 ````javascript
-     console.log("1: Start");
+console.log("1: Start");
 	setTimeout(() => {
 		console.log("2: setTimeout");
-	}, 0);
- 
-	Promise.resolve().then(() => {
- 		console.log("3: Promise");
-	});
-	console.log("4: End");
+}, 0);
+
+Promise.resolve().then(() => {
+	console.log("3: Promise");
+});
+console.log("4: End");
 ````
 
 
